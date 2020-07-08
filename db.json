@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 7
     },
     {
       "id": 2,
@@ -47,6 +47,18 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "gggg",
+      "image": "https://i.redd.it/dqvgnv4yei631.jpg",
+      "likes": 20,
+      "id": 13
+    },
+    {
+      "name": "d",
+      "image": "https://i.redd.it/rz3o1yibnc511.png",
+      "likes": 0,
+      "id": 14
     }
   ]
 }
