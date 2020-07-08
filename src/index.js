@@ -2,7 +2,7 @@ let addToy = false;
 
 const toyInfoCard = (name, url, id, likes=0) => {
   let mainDiv = document.createElement('div');
-  mainDiv.class = 'card';
+  mainDiv.className = 'card';
   mainDiv.innerHTML =
   `
     <h2>${name}</h2>
@@ -19,7 +19,7 @@ const addNewToy = (name, url, id) => {
   document.getElementById('toy-collection').appendChild(newToy);
 }
 
-const sendToy = (name, image) => {
+const sendToy = (name, image, likes=0) => {
   const config = {
     method: "POST",
     headers: {
@@ -55,8 +55,8 @@ const increaseLikes = (e) => {
   const likes = toy.getElementsByClassName('like')[0];
   let likeCount = parseInt(likes.innerHTML.split(" ")[0])
   updateToy(id, likeCount + 1).
-    then( (res) => likes.innerHTML = `${likeCount + 1} Likes`).
-    catch( (err) => { debugger; })
+    then( (res) => likes.innerHTML = `${likeCount + 1} Likes`);
+    // catch( (err) => { debugger; })
 }
 
 const displayToys = (toys) => {
@@ -72,17 +72,16 @@ const displayToys = (toys) => {
 const getToys = () => {
   fetch('http://localhost:3000/toys').
     then( res => res.json() ).
-    then( json => { displayToys(json)} ).
-    catch( err => { debugger; } );
+    then( json => { displayToys(json)} );
+    // .catch( err => { debugger; } );
 }
 
 const sendToyAndAdd = (e) => {
-  const toyHTML = (num) => e.srcElement.children[num].value
-  debugger
+  const toyHTML = (num) => e.srcElement.children[num].value;
   sendToy(toyHTML(1), toyHTML(3)).
-    then(res => res.json()).
-    then(json => addNewToy(json.name, json.url, json.id)).
-    catch(err => {console.log(err); debugger; e.preventDefault()});
+    then(res => res.json() ).
+    then(json => addNewToy(json.name, json.url, json.id))
+    // .catch(err => {console.log(err); debugger; e.preventDefault()});
   // addNewToy('Guilamon', 'https://i.redd.it/dqvgnv4yei631.jpg');
   e.preventDefault();
 }

@@ -51,8 +51,14 @@
     {
       "name": "gggg",
       "image": "https://i.redd.it/dqvgnv4yei631.jpg",
-      "likes": 0,
+      "likes": 20,
       "id": 13
+    },
+    {
+      "name": "d",
+      "image": "https://i.redd.it/rz3o1yibnc511.png",
+      "likes": 0,
+      "id": 14
     }
   ]
 }
