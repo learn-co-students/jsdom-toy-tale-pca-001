@@ -22,7 +22,7 @@
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 4
+      "likes": 12
     },
     {
       "id": 5,
@@ -137,6 +137,30 @@
       "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
       "likes": 1,
       "id": 23
+    },
+    {
+      "name": "test",
+      "image": "testestset",
+      "likes": 0,
+      "id": 24
+    },
+    {
+      "name": "testToy",
+      "image": "www.toy.com/image",
+      "likes": 0,
+      "id": 25
+    },
+    {
+      "name": "test",
+      "image": "newtoy.com",
+      "likes": 0,
+      "id": 26
+    },
+    {
+      "name": "wood",
+      "image": "wood.jpg",
+      "likes": 5,
+      "id": 27
     }
   ]
 }

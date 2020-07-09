@@ -57,14 +57,14 @@ function buildToyDiv(toy) {
   btn = document.createElement("button")
   btn.classList.add("like-btn")
   btn.innerText = "Like <3"
-  btn.onclick = () => incrementLikes(toy.id, toy.likes)
+  btn.onclick = () => incrementLikes(toy.id)
   toyDiv.appendChild(btn)
 
   return toyDiv
 }
 
 function createToy(e) {
-  e.preventDefault(true)
+  e.preventDefault()
   let nameInput = document.getElementsByClassName("input-text").name
   let imageInput = document.getElementsByClassName("input-text").image
 
@@ -107,7 +107,9 @@ function createToy(e) {
 
 }
 
-function incrementLikes(id, likes) {
+function incrementLikes(id) {
+  like_container = document.getElementById(`${id}-likes`)
+  likes = like_container.innerText
   let configObj = {
     method: "PATCH",
     headers: {
@@ -122,7 +124,7 @@ function incrementLikes(id, likes) {
   fetch(`http://localhost:3000/toys/${id}`, configObj)
   .then(resp => { return resp.json() })
   .then(json => {
-    document.getElementById(`${id}-likes`).innerText++
+    document.getElementById(`${id}-likes`).innerText = json.likes
   })
 
 
