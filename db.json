@@ -46,7 +46,19 @@
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
+      "likes": 3
+    },
+    {
+      "name": "maddie",
+      "image": "https://www.google.com/search?q=toy&sxsrf=ALeKk00H_TQSU4RRfIG5wr5L4gvrQaDtDw:1594306952212&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjtoLKcuMDqAhWsiOAKHXZ3CrAQ_AUoA3oECA0QBQ&biw=1212&bih=884#imgrc=vnzsNlCLZq5lbM",
+      "likes": 4,
+      "id": 9
+    },
+    {
+      "name": "lego",
+      "image": "https://www.bricks4kidz.com/georgia-atlanta-decatur/wp-content/uploads/sites/110/2018/09/Lego-birthday-party-for-kids-1000x675.jpg",
+      "likes": 0,
+      "id": 10
     }
   ]
 }

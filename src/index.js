@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function createToy(event){
-    event.preventDefault(true)
+    event.preventDefault()
     let nameInput = document.getElementsByClassName("input-text").name
     let imgInput = document.getElementsByClassName("input-text").image
 
@@ -97,3 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 })
+
+
+
